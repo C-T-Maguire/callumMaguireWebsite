@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url("./images/wave.webp");
+    background-repeat: repeat-y;
+    background-color: #FDB750;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    width: 80%;
+    margin: 7rem auto 0 auto;
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+p {
+    color: #3B0918;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #3B0918;
+    border-bottom: DARKRED 5px solid;
+}
+
+.sidenav {
+    display: none;
+}
+
+#flex-fade-in {
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    margin-left: 30px;
+}
+
+#nav-main {
+    margin-right: 30px;
+}
+
+#nav-mobile {
+    display: none;
+}
+
+header nav span {
+    padding: 0.5rem;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+}
+
+.change-link-color {
+    position: relative;
+    top: 0px;
+    color: #FFF3D9;
+    transition: 0.4s;
+}
+
+.change-link-color:hover {
+    color: #feb16a;
+    position: relative;
+    top: -5px; 
+}
+
+.content {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.intro {
+    margin-left: 2rem;
+}
+
+#profPic {
+    height: 15rem;
+    border-radius: 50%;    
+}
+
+.portfolio {
+    display: flex;
+    width: 100%;
+    margin-top: 4rem 0;
+    background-color: #FFF3D9;
+}
+
+.proj {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin-top: 4rem;
+}
+
+.proj-desc {
+    margin: 2rem;
+}
+
+.polaroid {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  
+.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#piano {
+    margin-left: auto;
+}
+
+#piano-mob {
+    display: none;
+}
+
+.contact {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.email img {
+    max-width: 5%;
+    margin: 2rem;
+}
+
+
+.social {
+    margin-top: 4rem;
+}
+
+.social-icons {
+    width: 100%;;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons img {
+    max-width: 10%;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    #nav-main {
+        display: none;
+    }
+
+    .sidenav {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #feb16a;
+        display: block;
+        transition: 0.3s;
+        position: relative;
+        top: 0px;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+        top: -5px;
+    }
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .mobBack {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        opacity: 0.4;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    #mobile-burger {
+        margin-right: 2rem;
+        display: inline-block;
+        font-size:30px;
+        cursor:pointer;
+        color: #feb16a;
+        transition: 0.3s;
+
+    }
+
+    #mobile-burger:hover {
+        color: #f1f1f1;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .proj {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #piano-desk {
+        display: none;
+    }
+
+    #piano-mob {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .content {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 3rem;
+        padding: 1rem;
+        font-weight: bold;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+}

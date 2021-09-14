@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callum Maguire</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div id="mobNavBack" class="mobBack"></div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+
+    <header>
+        <div id="flex-fade-in">
+            <img id="logo" src="./images/redheadLogo.png" alt="redhead design logo"/>
+            <span id="mobile-burger" onclick="openNav()">&#9776;</span>
+            <nav id="nav-main">
+                <span><a class="change-link-color" id="about-link" href="#about">About</a></span>
+                <span><a class="change-link-color" id="portfolio-link" href="#portfolio">Portfolio</a></span>
+                <span><a class="change-link-color" id="contact-link" href="#contact">Contact</a></span>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <h1>Callum Maguire</h1>
+        <h2>Full Stack Developer (in training)</h2>
+        <div class="about" id="about">
+            <div class="content">
+                <div class="prof-pic">
+                    <img id="profPic" src="./images/callumM.jpg"  alt="profile-picture"/>
+                </div>
+                <div class="intro">
+                    <p>My name is Callum Maguire, I am an in-training software developer from Watford, England. My Software journey first started 10 years ago, first dabbling into HTML, CSS and PHP when I did an apprenticeship after leaving school.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="portfolio" id="portfolio"></div>
+
+        <h2>Portfolio Projects</h2>
+
+
+            <div class="proj" id="fomatic">
+                <div class="polaroid">
+                    <img src="./images/fomatic.png" alt="5 Terre" style="width:100%">
+                    <div class="container">
+                    <p>Fomatic Website</p>
+                    </div>
+                </div>
+                <div class="proj-desc">
+                    <p>This is an exapmple of some CSS/HTML skills wokring with responsive websites and debugging. This project came with the task of debugging the project from the intial invalid code to a fully functional responsive website. </p>
+                </div>
+            </div>
+
+            <div class="proj" id="piano">
+                <div class="proj-desc" id="piano-desk">
+                    <p>This is a Javascript based project creating a virtual Keyboard. The song playing displayes the keys to "Happy Birthday" with each bar changing to the current one when you press the next line. </p>
+                </div>
+                <div class="polaroid">
+                    <img src="./images/piano.JPG" alt="5 Terre" style="width:100%">
+                    <div class="container">
+                    <p>Piano Player</p>
+                    </div>
+                </div>
+                <div class="proj-desc" id="piano-mob">
+                    <p>This is a Javascript based project creating a virtual Keyboard. The song playing displayes the keys to "Happy Birthday" with each bar changing to the current one when you press the next line. </p>
+                </div>
+            </div>
+
+        <div class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>For any enquiries or any work you'd like done please feel free to contact me below:</p>
+            <div class="email">
+                <img src="./images/email.png" alt="email Icon"/>
+                <h3>callum.maguire@outlook.com</h3>
+            </div>
+
+            <div class="social">
+                <div class="social-icons">
+                    <img src="./images/facebook.png" alt="facebook"/>
+                    <img src="./images/youtube.png" alt="youtube"/>
+                </div>
+                <br>
+                <h3>Callum Maguire</h3>
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
